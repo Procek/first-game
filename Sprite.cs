@@ -1,26 +1,31 @@
 ﻿using System.Drawing;
+using System.Reflection;
 
 namespace GraProckowa
 {
     public class Sprite
     {
-        public Vector position = null;
-        public Vector scale = null;
-        public string directory = "";
-        public Vector shift = null;
-        public Bitmap spriteFinish = null;        
+        public Vector Scale { get; }
+        public Vector Shift { get; }
+        public Bitmap SpriteFinish { get; }     
 
+        // TODO: Seems that position is not used
         public Sprite(Vector position, Vector scale, string directory, Vector shift)
         {
-            this.position = position;
-            this.scale = scale;
-            this.directory = directory;
-            this.shift = shift;
+            Scale = scale;
+            Shift = shift;
 
-            Image tmp = Image.FromFile($"Assets/Sprites/{directory}.png");
+            var assembly = Assembly.GetExecutingAssembly();
 
-            Bitmap sprite = new Bitmap(tmp);
-            spriteFinish = sprite;
+            directory = directory.Replace("/", ".");
+            var resourceName = $"GraProckowa.Assets.{directory}.png";
+            using (var imageStream = assembly.GetManifestResourceStream(resourceName))
+            {
+                var tmp = Image.FromStream(imageStream);
+
+                Bitmap sprite = new Bitmap(tmp);
+                SpriteFinish = sprite;
+            }
         }
     }
 }

@@ -137,11 +137,11 @@ namespace GraProckowa
                 {
                     if (dungeon.area[j, i, 2] != 0)
                     {
-                        g.DrawImage(spriteList[dungeon.area[j, i, 2]].spriteFinish, //var dejva
-                                    j * 45 + spriteList[dungeon.area[j, i, 2]].shift.x,
-                                    i * 45 + spriteList[dungeon.area[j, i, 2]].shift.y,
-                                    spriteList[dungeon.area[j, i, 2]].scale.x,
-                                    spriteList[dungeon.area[j, i, 2]].scale.y);
+                        g.DrawImage(spriteList[dungeon.area[j, i, 2]].SpriteFinish, //var dejva
+                                    j * 45 + spriteList[dungeon.area[j, i, 2]].Shift.x,
+                                    i * 45 + spriteList[dungeon.area[j, i, 2]].Shift.y,
+                                    spriteList[dungeon.area[j, i, 2]].Scale.x,
+                                    spriteList[dungeon.area[j, i, 2]].Scale.y);
                     }
                 }
             }
@@ -152,11 +152,11 @@ namespace GraProckowa
                 {
                     if (dungeon.area[j, i, 3] != 0)
                     {
-                        g.DrawImage(spriteList[dungeon.area[j, i, 3]].spriteFinish,
-                                    j * 45 + spriteList[dungeon.area[j, i, 3]].shift.x, 
-                                    i * 45 + spriteList[dungeon.area[j, i, 3]].shift.y, 
-                                    spriteList[dungeon.area[j, i, 3]].scale.x, 
-                                    spriteList[dungeon.area[j, i, 3]].scale.y);
+                        g.DrawImage(spriteList[dungeon.area[j, i, 3]].SpriteFinish,
+                                    j * 45 + spriteList[dungeon.area[j, i, 3]].Shift.x, 
+                                    i * 45 + spriteList[dungeon.area[j, i, 3]].Shift.y, 
+                                    spriteList[dungeon.area[j, i, 3]].Scale.x, 
+                                    spriteList[dungeon.area[j, i, 3]].Scale.y);
                     }
                 }
             }            

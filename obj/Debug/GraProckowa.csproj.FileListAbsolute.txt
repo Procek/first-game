@@ -1,7 +1,0 @@
-C:\Users\nowy\source\repos\GraProckowa\bin\Debug\GraProckowa.exe.config
-C:\Users\nowy\source\repos\GraProckowa\bin\Debug\GraProckowa.exe
-C:\Users\nowy\source\repos\GraProckowa\bin\Debug\GraProckowa.pdb
-C:\Users\nowy\source\repos\GraProckowa\obj\Debug\GraProckowa.csproj.AssemblyReference.cache
-C:\Users\nowy\source\repos\GraProckowa\obj\Debug\GraProckowa.csproj.CoreCompileInputs.cache
-C:\Users\nowy\source\repos\GraProckowa\obj\Debug\GraProckowa.exe
-C:\Users\nowy\source\repos\GraProckowa\obj\Debug\GraProckowa.pdb
